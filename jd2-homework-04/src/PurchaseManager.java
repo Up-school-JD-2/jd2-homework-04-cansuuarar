@@ -76,9 +76,9 @@ public class PurchaseManager {
 	public void searchSong(Song song) {
 		if (this.song.contains(song)) {
 			System.out.println(song.getSongName() + " şarkısı bulundu.");
-		} else {
+		} else 
 			System.out.println(song.getSongName() + " şarkısı bulunamadı.");
-		}
+		
 
 	}
 
