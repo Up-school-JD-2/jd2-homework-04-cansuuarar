@@ -67,23 +67,19 @@ public class PurchaseManager {
 	}
 
 	public void searchAlbum(Album album) {
-		for (Album album1 : this.album) {
-			if (album1.equals(album)) {
-				System.out.println(album.getAlbumName() + " albumü bulundu");
-			} else {
-				System.out.println("album bulunamadı");
-			}
-		}
+		if (this.album.contains(album)) {
+			System.out.println(album.getAlbumName() + " albümü bulundu.");
+		} else
+			System.out.println(album.getAlbumName() + " albümü bulunamadı.");
 	}
 
-	public void searchSong(Song Song1) {
-		for (Song song1 : this.song) {
-			if (song1.equals(song)) {
-				System.out.println("şarkı bulundu.");
-			} else {
-				System.out.println("şarkı bulunamadı.");
-			}
+	public void searchSong(Song song) {
+		if (this.song.contains(song)) {
+			System.out.println(song.getSongName() + " şarkısı bulundu.");
+		} else {
+			System.out.println(song.getSongName() + " şarkısı bulunamadı.");
 		}
+
 	}
 
 }

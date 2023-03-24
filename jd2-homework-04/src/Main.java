@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
@@ -20,8 +21,8 @@ public class Main {
 
 		Album album1 = new Album("Yaz", "Mor ve Ötesi", 2003, Arrays.asList(song1,song3), 10);
 		Album album2 = new Album("Şehir", "Mor ve Ötesi", 1996, Arrays.asList(song2), 20);
-
 		
+
 
 		userSystem.createAccount(user1);
 		userSystem.createAccount(user2);
@@ -51,9 +52,13 @@ public class Main {
 		purchaseManager.listSongPurchased();
 		cartSystem.listSonginCart();
 		
+	
+		// Search methods look for purchased albums and songs. 
+		purchaseManager.searchAlbum(album1);
+		purchaseManager.searchSong(song3);
 		
 		
-		//purchaseManager.searchAlbum(album2);
+		
 	}
 
 }

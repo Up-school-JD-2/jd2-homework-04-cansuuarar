@@ -16,6 +16,10 @@ public class Album {
 		this.song = song;
 		this.price = price;
 	}
+	
+	public Album() {
+		// TODO Auto-generated constructor stub
+	}
 
 	public String getAlbumName() {
 		return albumName;
